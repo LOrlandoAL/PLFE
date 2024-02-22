@@ -1,0 +1,10 @@
+filtrarPares :: [Int] -> [Int]
+filtrarPares lista = filter even lista
+
+main :: IO ()
+main = do
+    putStrLn "Ingrese una lista de enteros: "
+    input <- getLine
+    let lista = map read $ words input :: [Int]
+        listaFiltrada = filtrarPares lista
+    putStrLn $ "La lista filtrada de pares es: " ++ show listaFiltrada
