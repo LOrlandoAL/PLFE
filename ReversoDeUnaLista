@@ -1,0 +1,4 @@
+reversoLista :: [a] -> [a]
+reversoLista lista = reverse lista
+
+main = print (reversoLista [1,2,3,4,5])
