@@ -1,0 +1,3 @@
+longitudCadena :: String -> Int
+longitudCadena cadena = length cadena
+main = print (longitudCadena "12345")
