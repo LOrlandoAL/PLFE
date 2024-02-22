@@ -1,0 +1,6 @@
+sumarLista:: Integer -> Integer
+sumarLista 0 = 0
+sumarLista 1 = 1
+sumarLista n = sumarLista (n-1) + sumarLista (n-2)
+
+main = print (sumarLista 1)
