@@ -1,0 +1,10 @@
+duplicarElementos :: [Int] -> [Int]
+duplicarElementos lista = concat [[x, x] | x <- lista]
+
+main :: IO ()
+main = do
+    putStrLn "Ingrese una lista de enteros: "
+    input <- getLine
+    let lista = map read $ words input :: [Int]
+        listaDuplicada = duplicarElementos lista
+    putStrLn $ "La lista duplicada es: " ++ show listaDuplicada
